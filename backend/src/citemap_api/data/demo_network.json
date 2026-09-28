@@ -1,0 +1,1890 @@
+{
+ "meta": {
+  "source": "demo",
+  "synthetic": true,
+  "description": "Synthetic citation network for offline demonstrations of CiteMap. Titles, authors, venues and counts are generated and do not describe real publications.",
+  "generator": "backend/scripts/generate_demo_data.py",
+  "seed": 42,
+  "license": "CC0-1.0"
+ },
+ "papers": [
+  {
+   "id": "D001",
+   "title": "Document Embeddings for Full Text Articles",
+   "year": 1996,
+   "authors": [
+    "Lukas Kim"
+   ],
+   "cited_by_count": 1808,
+   "references": [],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "Contrastive learning on citation pairs improves document embeddings for similarity search. Pretrained neural encoders reduce the annotation effort for scientific text tasks. We train transformer language models to embed literature search into a semantic vector space."
+  },
+  {
+   "id": "D002",
+   "title": "Scalable Computational Reproducibility of Laboratory Notebooks",
+   "year": 1996,
+   "authors": [
+    "Zhanna Kim"
+   ],
+   "cited_by_count": 844,
+   "references": [],
+   "venue": "Network Science Demo Journal",
+   "abstract": "We examine the reproducibility of scientific pipelines and the availability of code and data. We propose guidelines for citing research software and archiving releases with a DOI. Open science practices such as data sharing and preregistration are becoming common."
+  },
+  {
+   "id": "D003",
+   "title": "Towards Citation Counts in Scientific Journals",
+   "year": 1996,
+   "authors": [
+    "Noah Carvalho",
+    "Noah Lindqvist",
+    "Tomás Silva"
+   ],
+   "cited_by_count": 1057,
+   "references": [],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "We propose a normalised impact indicator that corrects for field size and publication age. The study measures research impact with co-citation and h-index based indicators. Bibliometric evidence suggests that scholarly influence concentrates in few journals."
+  },
+  {
+   "id": "D004",
+   "title": "Towards Open Science in Machine Learning Experiments",
+   "year": 1996,
+   "authors": [
+    "Yuki Duarte",
+    "Fatima Haddad",
+    "Daniyar Esenova",
+    "Tomás Haddad"
+   ],
+   "cited_by_count": 1511,
+   "references": [],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "Open science practices such as data sharing and preregistration are becoming common. We examine the reproducibility of machine learning experiments and the availability of code and data. We propose guidelines for citing research software and archiving releases with a DOI."
+  },
+  {
+   "id": "D005",
+   "title": "Software Citation for Laboratory Notebooks",
+   "year": 1998,
+   "authors": [
+    "Mateo Abenova",
+    "Aigerim Novak"
+   ],
+   "cited_by_count": 1414,
+   "references": [
+    "D001",
+    "D002",
+    "D003",
+    "D004"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "FAIR principles improve the findability and reuse of research data and software. Provenance tracking and versioned workflows make computational results verifiable. We examine the reproducibility of scientific pipelines and the availability of code and data."
+  },
+  {
+   "id": "D006",
+   "title": "Computational Reproducibility in Research Code",
+   "year": 1999,
+   "authors": [
+    "Tomás Okafor",
+    "Mei Silva",
+    "Elif Kim",
+    "Yuki Oyelaran"
+   ],
+   "cited_by_count": 228,
+   "references": [
+    "D001",
+    "D002",
+    "D003",
+    "D004",
+    "D005"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "FAIR principles improve the findability and reuse of research data and software. Provenance tracking and versioned workflows make computational results verifiable. Open science practices such as data sharing and preregistration are becoming common."
+  },
+  {
+   "id": "D007",
+   "title": "Open Science: Evidence from Laboratory Notebooks",
+   "year": 1999,
+   "authors": [
+    "Sofia Novak",
+    "Sofia Oyelaran"
+   ],
+   "cited_by_count": 662,
+   "references": [
+    "D001",
+    "D002",
+    "D003",
+    "D004",
+    "D005"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "Provenance tracking and versioned workflows make computational results verifiable. Open science practices such as data sharing and preregistration are becoming common. We propose guidelines for citing research software and archiving releases with a DOI."
+  },
+  {
+   "id": "D008",
+   "title": "Towards Scale-Free Networks in Citation Graphs",
+   "year": 1999,
+   "authors": [
+    "Sofia Fischer",
+    "Daniyar Abenova",
+    "Elif Fischer"
+   ],
+   "cited_by_count": 651,
+   "references": [
+    "D001",
+    "D002",
+    "D003",
+    "D004",
+    "D005"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "We detect communities in citation graphs using modularity optimization and random walks. Our clustering algorithm scales to networks with millions of edges. Centrality measures such as PageRank identify structurally important nodes."
+  },
+  {
+   "id": "D009",
+   "title": "Zoomable Interfaces: Evidence from Science Maps",
+   "year": 1999,
+   "authors": [
+    "Chloé Kim"
+   ],
+   "cited_by_count": 508,
+   "references": [
+    "D001",
+    "D002",
+    "D005"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "We present an interactive visualization system for exploring large graphs. A user study shows that visual exploration speeds up literature review tasks. Force-directed graph layout algorithms are adapted to render thousands of nodes."
+  },
+  {
+   "id": "D010",
+   "title": "Towards Bibliometric Indicators in Scientific Journals",
+   "year": 2000,
+   "authors": [
+    "Elif Oyelaran"
+   ],
+   "cited_by_count": 567,
+   "references": [
+    "D001",
+    "D002",
+    "D003"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "Our results show that citation distributions are highly skewed and field dependent. The study measures research impact with co-citation and h-index based indicators. We analyse citation counts and bibliometric indicators across early career researchers."
+  },
+  {
+   "id": "D011",
+   "title": "Towards Neural Text Encoders in Scientific Abstracts",
+   "year": 2000,
+   "authors": [
+    "Noah Fischer",
+    "Zhanna Kowalski",
+    "Yuki Duarte",
+    "Noah Nurlanov"
+   ],
+   "cited_by_count": 280,
+   "references": [
+    "D001",
+    "D002",
+    "D003",
+    "D004",
+    "D005",
+    "D007",
+    "D009"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "Contrastive learning on citation pairs improves document embeddings for similarity search. We train transformer language models to embed research topics into a semantic vector space. Pretrained neural encoders reduce the annotation effort for scientific text tasks."
+  },
+  {
+   "id": "D012",
+   "title": "Graph Layout: Evidence from Literature Reviews",
+   "year": 2001,
+   "authors": [
+    "Omar Haddad"
+   ],
+   "cited_by_count": 579,
+   "references": [
+    "D001",
+    "D004",
+    "D009"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "The interface combines zoomable maps, filtering and linked detail views. A user study shows that visual exploration speeds up literature review tasks. Force-directed graph layout algorithms are adapted to render thousands of nodes."
+  },
+  {
+   "id": "D013",
+   "title": "Research Software: Evidence from Machine Learning Experiments",
+   "year": 2001,
+   "authors": [
+    "Zhanna Okafor"
+   ],
+   "cited_by_count": 292,
+   "references": [
+    "D001",
+    "D002",
+    "D003",
+    "D004"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "We propose guidelines for citing research software and archiving releases with a DOI. Open science practices such as data sharing and preregistration are becoming common. We examine the reproducibility of research code and the availability of code and data."
+  },
+  {
+   "id": "D014",
+   "title": "Scalable Interactive Visualization of Citation Networks",
+   "year": 2001,
+   "authors": [
+    "Mei Okafor"
+   ],
+   "cited_by_count": 597,
+   "references": [
+    "D005",
+    "D009",
+    "D010"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "The interface combines zoomable maps, filtering and linked detail views. Force-directed graph layout algorithms are adapted to render thousands of nodes. Visual analytics helps researchers identify clusters and bridges between fields."
+  },
+  {
+   "id": "D015",
+   "title": "Open Peer Review: Evidence from Machine Learning Experiments",
+   "year": 2002,
+   "authors": [
+    "Laura Novak",
+    "Arman Kowalski"
+   ],
+   "cited_by_count": 417,
+   "references": [
+    "D002",
+    "D004",
+    "D005",
+    "D009",
+    "D013"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "FAIR principles improve the findability and reuse of research data and software. Open science practices such as data sharing and preregistration are becoming common. We propose guidelines for citing research software and archiving releases with a DOI."
+  },
+  {
+   "id": "D016",
+   "title": "Rethinking Graph Centrality for Bibliographic Coupling",
+   "year": 2002,
+   "authors": [
+    "Sofia Lindqvist",
+    "Daniyar Haddad",
+    "Yuki Tanaka"
+   ],
+   "cited_by_count": 354,
+   "references": [
+    "D001",
+    "D003",
+    "D005",
+    "D008"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "The network topology follows a heavy tailed degree distribution. Centrality measures such as PageRank identify structurally important nodes. Our clustering algorithm scales to networks with millions of edges."
+  },
+  {
+   "id": "D017",
+   "title": "Rethinking Modularity Optimization for Citation Graphs",
+   "year": 2002,
+   "authors": [
+    "Elif Singh",
+    "Noah Silva"
+   ],
+   "cited_by_count": 974,
+   "references": [
+    "D001",
+    "D002",
+    "D008"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "The network topology follows a heavy tailed degree distribution. Link prediction methods anticipate future citations from the current graph structure. We detect communities in directed networks using modularity optimization and random walks."
+  },
+  {
+   "id": "D018",
+   "title": "Scholarly Influence: Evidence from Funding Decisions",
+   "year": 2002,
+   "authors": [
+    "Priya Tanaka",
+    "Mateo Fischer",
+    "Daniyar Kowalski"
+   ],
+   "cited_by_count": 430,
+   "references": [
+    "D003",
+    "D004",
+    "D010"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "Bibliometric evidence suggests that scholarly influence concentrates in few journals. We propose a normalised impact indicator that corrects for field size and publication age. We analyse citation counts and bibliometric indicators across early career researchers."
+  },
+  {
+   "id": "D019",
+   "title": "Community Detection in Citation Graphs",
+   "year": 2003,
+   "authors": [
+    "Chloé Rossi",
+    "Ivan Fischer"
+   ],
+   "cited_by_count": 526,
+   "references": [
+    "D001",
+    "D004",
+    "D008",
+    "D016",
+    "D017"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "Link prediction methods anticipate future citations from the current graph structure. We detect communities in directed networks using modularity optimization and random walks. Our clustering algorithm scales to networks with millions of edges."
+  },
+  {
+   "id": "D020",
+   "title": "Rethinking Citation Counts for Interdisciplinary Research",
+   "year": 2003,
+   "authors": [
+    "Laura Esenova",
+    "Kenji Okafor",
+    "Mei Rossi"
+   ],
+   "cited_by_count": 207,
+   "references": [
+    "D003",
+    "D004",
+    "D005",
+    "D007"
+   ],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "We analyse citation counts and bibliometric indicators across research evaluation. Bibliometric evidence suggests that scholarly influence concentrates in few journals. Our results show that citation distributions are highly skewed and field dependent."
+  },
+  {
+   "id": "D021",
+   "title": "Scalable Interactive Visualization of Large Graphs",
+   "year": 2003,
+   "authors": [
+    "Elif Nurlanov"
+   ],
+   "cited_by_count": 333,
+   "references": [
+    "D003",
+    "D004",
+    "D005",
+    "D009",
+    "D012",
+    "D014"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "Visual analytics helps researchers identify clusters and bridges between fields. A user study shows that visual exploration speeds up literature review tasks. We present an interactive visualization system for exploring large graphs."
+  },
+  {
+   "id": "D022",
+   "title": "Scalable Interactive Visualization of Science Maps",
+   "year": 2003,
+   "authors": [
+    "Aigerim Duarte",
+    "Sofia Esenova"
+   ],
+   "cited_by_count": 466,
+   "references": [
+    "D009",
+    "D012",
+    "D014"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "We present an interactive visualization system for exploring large graphs. Visual analytics helps researchers identify clusters and bridges between fields. The interface combines zoomable maps, filtering and linked detail views."
+  },
+  {
+   "id": "D023",
+   "title": "Towards Network Rendering in Literature Reviews",
+   "year": 2003,
+   "authors": [
+    "Fatima Fischer",
+    "Lukas Kim",
+    "Fatima Rossi",
+    "Aigerim Oyelaran"
+   ],
+   "cited_by_count": 184,
+   "references": [
+    "D002",
+    "D003",
+    "D005",
+    "D009",
+    "D012",
+    "D014"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "Visual analytics helps researchers identify clusters and bridges between fields. Force-directed graph layout algorithms are adapted to render thousands of nodes. We present an interactive visualization system for exploring citation networks."
+  },
+  {
+   "id": "D024",
+   "title": "Community Detection in Directed Networks",
+   "year": 2004,
+   "authors": [
+    "Kenji Moreau",
+    "Sofia Moreau"
+   ],
+   "cited_by_count": 106,
+   "references": [
+    "D003",
+    "D008",
+    "D016",
+    "D017",
+    "D019"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "Centrality measures such as PageRank identify structurally important nodes. Our clustering algorithm scales to networks with millions of edges. The network topology follows a heavy tailed degree distribution."
+  },
+  {
+   "id": "D025",
+   "title": "Open Peer Review for Scientific Pipelines",
+   "year": 2004,
+   "authors": [
+    "Tomás Park",
+    "Chloé Kim",
+    "Kenji Esenova",
+    "Chloé Abenova"
+   ],
+   "cited_by_count": 171,
+   "references": [
+    "D002",
+    "D004",
+    "D005",
+    "D007"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "Provenance tracking and versioned workflows make computational results verifiable. We propose guidelines for citing research software and archiving releases with a DOI. FAIR principles improve the findability and reuse of research data and software."
+  },
+  {
+   "id": "D026",
+   "title": "Towards Community Detection in Bibliographic Coupling",
+   "year": 2004,
+   "authors": [
+    "Amara Singh",
+    "Aigerim Carvalho",
+    "Sofia Abenova"
+   ],
+   "cited_by_count": 295,
+   "references": [
+    "D001",
+    "D002",
+    "D003",
+    "D008",
+    "D014",
+    "D017",
+    "D019"
+   ],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "The network topology follows a heavy tailed degree distribution. We detect communities in heterogeneous graphs using modularity optimization and random walks. Link prediction methods anticipate future citations from the current graph structure."
+  },
+  {
+   "id": "D027",
+   "title": "Zoomable Interfaces in Science Maps",
+   "year": 2004,
+   "authors": [
+    "Fatima Moreau"
+   ],
+   "cited_by_count": 162,
+   "references": [
+    "D003",
+    "D017",
+    "D021"
+   ],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "The interface combines zoomable maps, filtering and linked detail views. A user study shows that visual exploration speeds up literature review tasks. Force-directed graph layout algorithms are adapted to render thousands of nodes."
+  },
+  {
+   "id": "D028",
+   "title": "Scalable Data Provenance of Digital Libraries",
+   "year": 2005,
+   "authors": [
+    "Tomás Abenova",
+    "Zhanna Tanaka",
+    "Zhanna Lindqvist",
+    "Priya Park"
+   ],
+   "cited_by_count": 79,
+   "references": [
+    "D004",
+    "D015",
+    "D017"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "We propose guidelines for citing research software and archiving releases with a DOI. FAIR principles improve the findability and reuse of research data and software. Open science practices such as data sharing and preregistration are becoming common."
+  },
+  {
+   "id": "D029",
+   "title": "Graph Layout: Evidence from Knowledge Domains",
+   "year": 2006,
+   "authors": [
+    "Sofia Bekova"
+   ],
+   "cited_by_count": 286,
+   "references": [
+    "D001",
+    "D004",
+    "D009",
+    "D012",
+    "D014",
+    "D022"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "Force-directed graph layout algorithms are adapted to render thousands of nodes. A user study shows that visual exploration speeds up literature review tasks. Visual analytics helps researchers identify clusters and bridges between fields."
+  },
+  {
+   "id": "D030",
+   "title": "Open Science for Shared Datasets",
+   "year": 2006,
+   "authors": [
+    "Tomás Singh"
+   ],
+   "cited_by_count": 146,
+   "references": [
+    "D003",
+    "D004",
+    "D005",
+    "D007",
+    "D015"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "Provenance tracking and versioned workflows make computational results verifiable. We examine the reproducibility of machine learning experiments and the availability of code and data. We propose guidelines for citing research software and archiving releases with a DOI."
+  },
+  {
+   "id": "D031",
+   "title": "Research Impact in Academic Fields",
+   "year": 2006,
+   "authors": [
+    "Aigerim Lindqvist",
+    "Ivan Haddad",
+    "Lukas Tanaka",
+    "Lukas Abenova"
+   ],
+   "cited_by_count": 207,
+   "references": [
+    "D002",
+    "D003",
+    "D005",
+    "D010",
+    "D015",
+    "D017",
+    "D018"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "The study measures research impact with co-citation and h-index based indicators. We analyse citation counts and bibliometric indicators across university rankings. Our results show that citation distributions are highly skewed and field dependent."
+  },
+  {
+   "id": "D032",
+   "title": "Visual Exploration: Evidence from Knowledge Domains",
+   "year": 2006,
+   "authors": [
+    "Arman Tanaka",
+    "Priya Nurlanov",
+    "Chloé Abenova",
+    "Aigerim Abenova"
+   ],
+   "cited_by_count": 146,
+   "references": [
+    "D009",
+    "D012",
+    "D014",
+    "D021"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "We present an interactive visualization system for exploring large graphs. The interface combines zoomable maps, filtering and linked detail views. Force-directed graph layout algorithms are adapted to render thousands of nodes."
+  },
+  {
+   "id": "D033",
+   "title": "Scalable Network Rendering of Citation Networks",
+   "year": 2007,
+   "authors": [
+    "Tomás Moreau",
+    "Elif Bekova"
+   ],
+   "cited_by_count": 175,
+   "references": [
+    "D009",
+    "D014",
+    "D017",
+    "D022"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "Force-directed graph layout algorithms are adapted to render thousands of nodes. A user study shows that visual exploration speeds up literature review tasks. We present an interactive visualization system for exploring web browsers."
+  },
+  {
+   "id": "D034",
+   "title": "Author Productivity: Evidence from University Rankings",
+   "year": 2008,
+   "authors": [
+    "Kenji Esenova",
+    "Priya Park",
+    "Elif Rossi"
+   ],
+   "cited_by_count": 330,
+   "references": [
+    "D001",
+    "D003",
+    "D014",
+    "D017"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "We analyse citation counts and bibliometric indicators across early career researchers. Bibliometric evidence suggests that scholarly influence concentrates in few journals. We propose a normalised impact indicator that corrects for field size and publication age."
+  },
+  {
+   "id": "D035",
+   "title": "FAIR Data in Shared Datasets",
+   "year": 2008,
+   "authors": [
+    "Yuki Oyelaran"
+   ],
+   "cited_by_count": 85,
+   "references": [
+    "D002",
+    "D004",
+    "D014",
+    "D015"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "We propose guidelines for citing research software and archiving releases with a DOI. Provenance tracking and versioned workflows make computational results verifiable. FAIR principles improve the findability and reuse of research data and software."
+  },
+  {
+   "id": "D036",
+   "title": "Rethinking Network Clustering for Heterogeneous Graphs",
+   "year": 2008,
+   "authors": [
+    "Priya Lindqvist",
+    "Yuki Oyelaran",
+    "Priya Duarte"
+   ],
+   "cited_by_count": 55,
+   "references": [
+    "D001",
+    "D002",
+    "D005",
+    "D008",
+    "D016",
+    "D017"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "Our clustering algorithm scales to networks with millions of edges. The network topology follows a heavy tailed degree distribution. We detect communities in directed networks using modularity optimization and random walks."
+  },
+  {
+   "id": "D037",
+   "title": "Towards Sentence Representations in Literature Search",
+   "year": 2008,
+   "authors": [
+    "Tomás Rossi",
+    "Amara Oyelaran"
+   ],
+   "cited_by_count": 66,
+   "references": [
+    "D001",
+    "D003",
+    "D004",
+    "D008",
+    "D013",
+    "D014",
+    "D031"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "The embeddings capture topical similarity better than bag of words representations. Contrastive learning on citation pairs improves document embeddings for similarity search. We evaluate sentence representations on paper recommendation and topic classification."
+  },
+  {
+   "id": "D038",
+   "title": "Rethinking Semantic Embeddings for Full Text Articles",
+   "year": 2009,
+   "authors": [
+    "Amara Duarte"
+   ],
+   "cited_by_count": 374,
+   "references": [
+    "D001",
+    "D003",
+    "D012"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "We train transformer language models to embed citation recommendation into a semantic vector space. Contrastive learning on citation pairs improves document embeddings for similarity search. We evaluate sentence representations on paper recommendation and topic classification."
+  },
+  {
+   "id": "D039",
+   "title": "Scalable Modularity Optimization of Temporal Networks",
+   "year": 2009,
+   "authors": [
+    "Daniyar Singh",
+    "Priya Rossi",
+    "Yuki Esenova"
+   ],
+   "cited_by_count": 88,
+   "references": [
+    "D001",
+    "D008",
+    "D017",
+    "D026"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "We detect communities in heterogeneous graphs using modularity optimization and random walks. Link prediction methods anticipate future citations from the current graph structure. The network topology follows a heavy tailed degree distribution."
+  },
+  {
+   "id": "D040",
+   "title": "Scalable Network Rendering of Literature Reviews",
+   "year": 2009,
+   "authors": [
+    "Amara Esenova",
+    "Laura Novak",
+    "Yuki Esenova"
+   ],
+   "cited_by_count": 212,
+   "references": [
+    "D001",
+    "D009",
+    "D021",
+    "D029"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "Visual analytics helps researchers identify clusters and bridges between fields. The interface combines zoomable maps, filtering and linked detail views. Force-directed graph layout algorithms are adapted to render thousands of nodes."
+  },
+  {
+   "id": "D041",
+   "title": "Towards Transformer Representations in Full Text Articles",
+   "year": 2009,
+   "authors": [
+    "Chloé Haddad",
+    "Elif Bekova",
+    "Priya Nurlanov"
+   ],
+   "cited_by_count": 65,
+   "references": [
+    "D001",
+    "D002",
+    "D007"
+   ],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "Pretrained neural encoders reduce the annotation effort for scientific text tasks. The embeddings capture topical similarity better than bag of words representations. We evaluate sentence representations on paper recommendation and topic classification."
+  },
+  {
+   "id": "D042",
+   "title": "Link Prediction in Scientific Communities",
+   "year": 2010,
+   "authors": [
+    "Sofia Esenova"
+   ],
+   "cited_by_count": 123,
+   "references": [
+    "D008",
+    "D009",
+    "D017"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "The network topology follows a heavy tailed degree distribution. Our clustering algorithm scales to networks with millions of edges. We detect communities in temporal networks using modularity optimization and random walks."
+  },
+  {
+   "id": "D043",
+   "title": "Bibliometric Indicators for University Rankings",
+   "year": 2011,
+   "authors": [
+    "Priya Okafor",
+    "Daniyar Carvalho",
+    "Chloé Moreau",
+    "Chloé Novak"
+   ],
+   "cited_by_count": 117,
+   "references": [
+    "D001",
+    "D003",
+    "D010",
+    "D022",
+    "D031"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "The study measures research impact with co-citation and h-index based indicators. Bibliometric evidence suggests that scholarly influence concentrates in few journals. We propose a normalised impact indicator that corrects for field size and publication age."
+  },
+  {
+   "id": "D044",
+   "title": "Literature Maps: Evidence from Science Maps",
+   "year": 2011,
+   "authors": [
+    "Ivan Novak",
+    "Amara Novak"
+   ],
+   "cited_by_count": 117,
+   "references": [
+    "D005",
+    "D009",
+    "D012",
+    "D014",
+    "D018",
+    "D029"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "The interface combines zoomable maps, filtering and linked detail views. A user study shows that visual exploration speeds up literature review tasks. We present an interactive visualization system for exploring citation networks."
+  },
+  {
+   "id": "D045",
+   "title": "Sentence Representations: Evidence from Citation Recommendation",
+   "year": 2011,
+   "authors": [
+    "Laura Haddad",
+    "Noah Duarte"
+   ],
+   "cited_by_count": 210,
+   "references": [
+    "D001",
+    "D005",
+    "D007",
+    "D011",
+    "D038"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "We evaluate sentence representations on paper recommendation and topic classification. Contrastive learning on citation pairs improves document embeddings for similarity search. The embeddings capture topical similarity better than bag of words representations."
+  },
+  {
+   "id": "D046",
+   "title": "Network Clustering: Evidence from Collaboration Networks",
+   "year": 2012,
+   "authors": [
+    "Chloé Nurlanov",
+    "Yuki Kowalski"
+   ],
+   "cited_by_count": 58,
+   "references": [
+    "D004",
+    "D008",
+    "D014",
+    "D017"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "We detect communities in heterogeneous graphs using modularity optimization and random walks. Our clustering algorithm scales to networks with millions of edges. The network topology follows a heavy tailed degree distribution."
+  },
+  {
+   "id": "D047",
+   "title": "Neural Text Encoders for Research Topics",
+   "year": 2012,
+   "authors": [
+    "Omar Oyelaran"
+   ],
+   "cited_by_count": 62,
+   "references": [
+    "D001",
+    "D009",
+    "D038",
+    "D045"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "Pretrained neural encoders reduce the annotation effort for scientific text tasks. Contrastive learning on citation pairs improves document embeddings for similarity search. We train transformer language models to embed multilingual papers into a semantic vector space."
+  },
+  {
+   "id": "D048",
+   "title": "Topic Modelling for Literature Search",
+   "year": 2012,
+   "authors": [
+    "Chloé Abenova"
+   ],
+   "cited_by_count": 150,
+   "references": [
+    "D001",
+    "D005",
+    "D045"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "The embeddings capture topical similarity better than bag of words representations. We evaluate sentence representations on paper recommendation and topic classification. Pretrained neural encoders reduce the annotation effort for scientific text tasks."
+  },
+  {
+   "id": "D049",
+   "title": "Towards Journal Impact in Interdisciplinary Research",
+   "year": 2012,
+   "authors": [
+    "Laura Tanaka",
+    "Kenji Bekova",
+    "Omar Nurlanov",
+    "Zhanna Oyelaran"
+   ],
+   "cited_by_count": 169,
+   "references": [
+    "D001",
+    "D002",
+    "D003",
+    "D010",
+    "D018",
+    "D034"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "Our results show that citation distributions are highly skewed and field dependent. The study measures research impact with co-citation and h-index based indicators. We analyse citation counts and bibliometric indicators across funding decisions."
+  },
+  {
+   "id": "D050",
+   "title": "Literature Maps in Knowledge Domains",
+   "year": 2013,
+   "authors": [
+    "Arman Fischer",
+    "Amara Singh",
+    "Yuki Novak"
+   ],
+   "cited_by_count": 116,
+   "references": [
+    "D009",
+    "D012",
+    "D014",
+    "D021"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "A user study shows that visual exploration speeds up literature review tasks. Visual analytics helps researchers identify clusters and bridges between fields. Force-directed graph layout algorithms are adapted to render thousands of nodes."
+  },
+  {
+   "id": "D051",
+   "title": "Research Software for Shared Datasets",
+   "year": 2014,
+   "authors": [
+    "Fatima Oyelaran",
+    "Fatima Singh",
+    "Arman Kowalski",
+    "Amara Lindqvist"
+   ],
+   "cited_by_count": 98,
+   "references": [
+    "D002",
+    "D004",
+    "D005",
+    "D007",
+    "D008",
+    "D009"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "We propose guidelines for citing research software and archiving releases with a DOI. Provenance tracking and versioned workflows make computational results verifiable. We examine the reproducibility of research code and the availability of code and data."
+  },
+  {
+   "id": "D052",
+   "title": "Scalable Computational Reproducibility of Digital Libraries",
+   "year": 2014,
+   "authors": [
+    "Sofia Rossi",
+    "Elif Kim",
+    "Ivan Kowalski",
+    "Elif Fischer"
+   ],
+   "cited_by_count": 48,
+   "references": [
+    "D002",
+    "D004",
+    "D005",
+    "D007",
+    "D010",
+    "D035"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "Provenance tracking and versioned workflows make computational results verifiable. FAIR principles improve the findability and reuse of research data and software. We propose guidelines for citing research software and archiving releases with a DOI."
+  },
+  {
+   "id": "D053",
+   "title": "Citation Analysis: Evidence from Scientific Journals",
+   "year": 2015,
+   "authors": [
+    "Elif Park"
+   ],
+   "cited_by_count": 66,
+   "references": [
+    "D001",
+    "D003",
+    "D010",
+    "D018",
+    "D031",
+    "D049"
+   ],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "The study measures research impact with co-citation and h-index based indicators. Bibliometric evidence suggests that scholarly influence concentrates in few journals. Our results show that citation distributions are highly skewed and field dependent."
+  },
+  {
+   "id": "D054",
+   "title": "Document Embeddings for Citation Recommendation",
+   "year": 2015,
+   "authors": [
+    "Zhanna Oyelaran"
+   ],
+   "cited_by_count": 57,
+   "references": [
+    "D001",
+    "D010",
+    "D038"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "Pretrained neural encoders reduce the annotation effort for scientific text tasks. Contrastive learning on citation pairs improves document embeddings for similarity search. The embeddings capture topical similarity better than bag of words representations."
+  },
+  {
+   "id": "D055",
+   "title": "Modularity Optimization for Directed Networks",
+   "year": 2015,
+   "authors": [
+    "Yuki Silva",
+    "Zhanna Nurlanov",
+    "Kenji Lindqvist"
+   ],
+   "cited_by_count": 137,
+   "references": [
+    "D008",
+    "D017",
+    "D019"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "Our clustering algorithm scales to networks with millions of edges. The network topology follows a heavy tailed degree distribution. Centrality measures such as PageRank identify structurally important nodes."
+  },
+  {
+   "id": "D056",
+   "title": "Rethinking Bibliometric Indicators for Scientific Journals",
+   "year": 2015,
+   "authors": [
+    "Daniyar Rossi",
+    "Elif Lindqvist",
+    "Chloé Oyelaran"
+   ],
+   "cited_by_count": 84,
+   "references": [
+    "D001",
+    "D003",
+    "D004",
+    "D005",
+    "D010",
+    "D018"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "We analyse citation counts and bibliometric indicators across funding decisions. Our results show that citation distributions are highly skewed and field dependent. The study measures research impact with co-citation and h-index based indicators."
+  },
+  {
+   "id": "D057",
+   "title": "Towards Network Clustering in Temporal Networks",
+   "year": 2015,
+   "authors": [
+    "Ivan Lindqvist",
+    "Mateo Silva",
+    "Priya Bekova"
+   ],
+   "cited_by_count": 110,
+   "references": [
+    "D008",
+    "D016",
+    "D017"
+   ],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "Link prediction methods anticipate future citations from the current graph structure. We detect communities in directed networks using modularity optimization and random walks. Centrality measures such as PageRank identify structurally important nodes."
+  },
+  {
+   "id": "D058",
+   "title": "Towards Network Topology in Citation Graphs",
+   "year": 2015,
+   "authors": [
+    "Zhanna Esenova",
+    "Laura Rossi",
+    "Tomás Nurlanov"
+   ],
+   "cited_by_count": 194,
+   "references": [
+    "D002",
+    "D003",
+    "D008",
+    "D017",
+    "D019"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "Centrality measures such as PageRank identify structurally important nodes. Link prediction methods anticipate future citations from the current graph structure. We detect communities in heterogeneous graphs using modularity optimization and random walks."
+  },
+  {
+   "id": "D059",
+   "title": "Graph Centrality: Evidence from Bibliographic Coupling",
+   "year": 2016,
+   "authors": [
+    "Daniyar Kim"
+   ],
+   "cited_by_count": 82,
+   "references": [
+    "D002",
+    "D008",
+    "D016",
+    "D017",
+    "D019"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "Our clustering algorithm scales to networks with millions of edges. The network topology follows a heavy tailed degree distribution. Centrality measures such as PageRank identify structurally important nodes."
+  },
+  {
+   "id": "D060",
+   "title": "Open Science: Evidence from Machine Learning Experiments",
+   "year": 2016,
+   "authors": [
+    "Fatima Haddad",
+    "Noah Novak"
+   ],
+   "cited_by_count": 64,
+   "references": [
+    "D001",
+    "D002",
+    "D004",
+    "D005",
+    "D007",
+    "D016"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "We examine the reproducibility of digital libraries and the availability of code and data. We propose guidelines for citing research software and archiving releases with a DOI. FAIR principles improve the findability and reuse of research data and software."
+  },
+  {
+   "id": "D061",
+   "title": "Rethinking Contrastive Learning for Research Topics",
+   "year": 2016,
+   "authors": [
+    "Noah Kim",
+    "Mei Tanaka",
+    "Laura Nurlanov"
+   ],
+   "cited_by_count": 36,
+   "references": [
+    "D001",
+    "D002",
+    "D005",
+    "D014"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "The embeddings capture topical similarity better than bag of words representations. Contrastive learning on citation pairs improves document embeddings for similarity search. Pretrained neural encoders reduce the annotation effort for scientific text tasks."
+  },
+  {
+   "id": "D062",
+   "title": "Rethinking Journal Impact for Academic Fields",
+   "year": 2016,
+   "authors": [
+    "Chloé Rossi",
+    "Sofia Novak",
+    "Sofia Esenova",
+    "Elif Fischer"
+   ],
+   "cited_by_count": 34,
+   "references": [
+    "D001",
+    "D003",
+    "D010",
+    "D018",
+    "D031"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "The study measures research impact with co-citation and h-index based indicators. Our results show that citation distributions are highly skewed and field dependent. We analyse citation counts and bibliometric indicators across scientific journals."
+  },
+  {
+   "id": "D063",
+   "title": "Towards Data Provenance in Shared Datasets",
+   "year": 2016,
+   "authors": [
+    "Yuki Novak",
+    "Aigerim Rossi",
+    "Tomás Fischer"
+   ],
+   "cited_by_count": 59,
+   "references": [
+    "D001",
+    "D002",
+    "D004",
+    "D005",
+    "D007",
+    "D015"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "Open science practices such as data sharing and preregistration are becoming common. FAIR principles improve the findability and reuse of research data and software. We propose guidelines for citing research software and archiving releases with a DOI."
+  },
+  {
+   "id": "D064",
+   "title": "Towards Software Citation in Laboratory Notebooks",
+   "year": 2016,
+   "authors": [
+    "Elif Tanaka",
+    "Zhanna Oyelaran",
+    "Lukas Haddad",
+    "Lukas Oyelaran"
+   ],
+   "cited_by_count": 71,
+   "references": [
+    "D001",
+    "D002",
+    "D005"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "Provenance tracking and versioned workflows make computational results verifiable. We propose guidelines for citing research software and archiving releases with a DOI. Open science practices such as data sharing and preregistration are becoming common."
+  },
+  {
+   "id": "D065",
+   "title": "Author Productivity for University Rankings",
+   "year": 2017,
+   "authors": [
+    "Elif Carvalho",
+    "Mei Silva",
+    "Zhanna Nurlanov",
+    "Priya Fischer"
+   ],
+   "cited_by_count": 19,
+   "references": [
+    "D003",
+    "D008",
+    "D016",
+    "D018"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "Bibliometric evidence suggests that scholarly influence concentrates in few journals. The study measures research impact with co-citation and h-index based indicators. We analyse citation counts and bibliometric indicators across scientific journals."
+  },
+  {
+   "id": "D066",
+   "title": "Neural Text Encoders for Citation Recommendation",
+   "year": 2018,
+   "authors": [
+    "Fatima Okafor",
+    "Lukas Bekova",
+    "Aigerim Lindqvist",
+    "Arman Esenova"
+   ],
+   "cited_by_count": 69,
+   "references": [
+    "D001",
+    "D012",
+    "D038"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "Pretrained neural encoders reduce the annotation effort for scientific text tasks. Contrastive learning on citation pairs improves document embeddings for similarity search. The embeddings capture topical similarity better than bag of words representations."
+  },
+  {
+   "id": "D067",
+   "title": "Scalable Literature Maps of Research Landscapes",
+   "year": 2018,
+   "authors": [
+    "Kenji Haddad",
+    "Zhanna Lindqvist"
+   ],
+   "cited_by_count": 18,
+   "references": [
+    "D003",
+    "D009",
+    "D012",
+    "D014"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "Force-directed graph layout algorithms are adapted to render thousands of nodes. We present an interactive visualization system for exploring knowledge domains. A user study shows that visual exploration speeds up literature review tasks."
+  },
+  {
+   "id": "D068",
+   "title": "Towards Co-citation Patterns in Research Evaluation",
+   "year": 2018,
+   "authors": [
+    "Amara Tanaka",
+    "Lukas Tanaka"
+   ],
+   "cited_by_count": 71,
+   "references": [
+    "D003",
+    "D010",
+    "D018",
+    "D049"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "We propose a normalised impact indicator that corrects for field size and publication age. Our results show that citation distributions are highly skewed and field dependent. Bibliometric evidence suggests that scholarly influence concentrates in few journals."
+  },
+  {
+   "id": "D069",
+   "title": "Author Productivity: Evidence from Interdisciplinary Research",
+   "year": 2019,
+   "authors": [
+    "Elif Novak"
+   ],
+   "cited_by_count": 116,
+   "references": [
+    "D001",
+    "D002",
+    "D003",
+    "D010",
+    "D055"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "Bibliometric evidence suggests that scholarly influence concentrates in few journals. We analyse citation counts and bibliometric indicators across academic fields. Our results show that citation distributions are highly skewed and field dependent."
+  },
+  {
+   "id": "D070",
+   "title": "Interactive Visualization: Evidence from Science Maps",
+   "year": 2019,
+   "authors": [
+    "Fatima Esenova",
+    "Mei Nurlanov"
+   ],
+   "cited_by_count": 40,
+   "references": [
+    "D009",
+    "D012",
+    "D014",
+    "D017",
+    "D021",
+    "D040"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "The interface combines zoomable maps, filtering and linked detail views. Visual analytics helps researchers identify clusters and bridges between fields. A user study shows that visual exploration speeds up literature review tasks."
+  },
+  {
+   "id": "D071",
+   "title": "Network Topology in Citation Graphs",
+   "year": 2019,
+   "authors": [
+    "Noah Lindqvist",
+    "Laura Kim",
+    "Yuki Singh",
+    "Noah Abenova"
+   ],
+   "cited_by_count": 49,
+   "references": [
+    "D016",
+    "D017",
+    "D042",
+    "D058"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "The network topology follows a heavy tailed degree distribution. We detect communities in collaboration networks using modularity optimization and random walks. Link prediction methods anticipate future citations from the current graph structure."
+  },
+  {
+   "id": "D072",
+   "title": "Rethinking Force-Directed Layouts for Citation Networks",
+   "year": 2019,
+   "authors": [
+    "Priya Park",
+    "Fatima Novak"
+   ],
+   "cited_by_count": 23,
+   "references": [
+    "D001",
+    "D005",
+    "D009",
+    "D012",
+    "D015",
+    "D029"
+   ],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "Force-directed graph layout algorithms are adapted to render thousands of nodes. A user study shows that visual exploration speeds up literature review tasks. We present an interactive visualization system for exploring knowledge domains."
+  },
+  {
+   "id": "D073",
+   "title": "Rethinking Semantic Embeddings for Scientific Abstracts",
+   "year": 2019,
+   "authors": [
+    "Elif Nurlanov",
+    "Elif Moreau",
+    "Kenji Oyelaran",
+    "Sofia Fischer"
+   ],
+   "cited_by_count": 54,
+   "references": [
+    "D001",
+    "D032",
+    "D038"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "Contrastive learning on citation pairs improves document embeddings for similarity search. The embeddings capture topical similarity better than bag of words representations. We train transformer language models to embed literature search into a semantic vector space."
+  },
+  {
+   "id": "D074",
+   "title": "Transformer Representations in Literature Search",
+   "year": 2019,
+   "authors": [
+    "Lukas Carvalho",
+    "Omar Nurlanov"
+   ],
+   "cited_by_count": 39,
+   "references": [
+    "D001",
+    "D015",
+    "D038",
+    "D048",
+    "D066"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "Pretrained neural encoders reduce the annotation effort for scientific text tasks. We evaluate sentence representations on paper recommendation and topic classification. The embeddings capture topical similarity better than bag of words representations."
+  },
+  {
+   "id": "D075",
+   "title": "Graph Centrality: Evidence from Scientific Communities",
+   "year": 2020,
+   "authors": [
+    "Mateo Esenova",
+    "Arman Fischer",
+    "Zhanna Duarte"
+   ],
+   "cited_by_count": 86,
+   "references": [
+    "D008",
+    "D017",
+    "D025"
+   ],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "The network topology follows a heavy tailed degree distribution. Our clustering algorithm scales to networks with millions of edges. We detect communities in citation graphs using modularity optimization and random walks."
+  },
+  {
+   "id": "D076",
+   "title": "Scalable Zoomable Interfaces of Large Graphs",
+   "year": 2020,
+   "authors": [
+    "Mei Silva",
+    "Fatima Esenova"
+   ],
+   "cited_by_count": 43,
+   "references": [
+    "D009",
+    "D012",
+    "D014",
+    "D033"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "The interface combines zoomable maps, filtering and linked detail views. Visual analytics helps researchers identify clusters and bridges between fields. Force-directed graph layout algorithms are adapted to render thousands of nodes."
+  },
+  {
+   "id": "D077",
+   "title": "Towards Journal Impact in Research Evaluation",
+   "year": 2020,
+   "authors": [
+    "Arman Kowalski",
+    "Mei Bekova"
+   ],
+   "cited_by_count": 48,
+   "references": [
+    "D003",
+    "D008",
+    "D034"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "Bibliometric evidence suggests that scholarly influence concentrates in few journals. Our results show that citation distributions are highly skewed and field dependent. We analyse citation counts and bibliometric indicators across funding decisions."
+  },
+  {
+   "id": "D078",
+   "title": "Research Impact: Evidence from Academic Fields",
+   "year": 2021,
+   "authors": [
+    "Daniyar Fischer"
+   ],
+   "cited_by_count": 16,
+   "references": [
+    "D003",
+    "D004",
+    "D010",
+    "D018",
+    "D049"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "The study measures research impact with co-citation and h-index based indicators. We analyse citation counts and bibliometric indicators across funding decisions. Bibliometric evidence suggests that scholarly influence concentrates in few journals."
+  },
+  {
+   "id": "D079",
+   "title": "Sentence Representations in Multilingual Papers",
+   "year": 2021,
+   "authors": [
+    "Chloé Tanaka"
+   ],
+   "cited_by_count": 179,
+   "references": [
+    "D001",
+    "D011",
+    "D038",
+    "D045",
+    "D074"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "Contrastive learning on citation pairs improves document embeddings for similarity search. The embeddings capture topical similarity better than bag of words representations. We train transformer language models to embed citation recommendation into a semantic vector space."
+  },
+  {
+   "id": "D080",
+   "title": "Towards Random Walk Methods in Scientific Communities",
+   "year": 2021,
+   "authors": [
+    "Aigerim Novak",
+    "Elif Lindqvist",
+    "Yuki Singh",
+    "Mei Abenova"
+   ],
+   "cited_by_count": 32,
+   "references": [
+    "D007",
+    "D008",
+    "D017",
+    "D018",
+    "D019",
+    "D071"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "Our clustering algorithm scales to networks with millions of edges. The network topology follows a heavy tailed degree distribution. We detect communities in scientific communities using modularity optimization and random walks."
+  },
+  {
+   "id": "D081",
+   "title": "Document Embeddings: Evidence from Paper Similarity",
+   "year": 2022,
+   "authors": [
+    "Lukas Moreau",
+    "Priya Okafor"
+   ],
+   "cited_by_count": 15,
+   "references": [
+    "D001",
+    "D003",
+    "D034",
+    "D079"
+   ],
+   "venue": "Proceedings of the Demo Conference on Digital Libraries",
+   "abstract": "We evaluate sentence representations on paper recommendation and topic classification. The embeddings capture topical similarity better than bag of words representations. Contrastive learning on citation pairs improves document embeddings for similarity search."
+  },
+  {
+   "id": "D082",
+   "title": "Language Models: Evidence from Research Topics",
+   "year": 2022,
+   "authors": [
+    "Tomás Haddad"
+   ],
+   "cited_by_count": 31,
+   "references": [
+    "D001",
+    "D003",
+    "D066",
+    "D079"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "The embeddings capture topical similarity better than bag of words representations. We evaluate sentence representations on paper recommendation and topic classification. Pretrained neural encoders reduce the annotation effort for scientific text tasks."
+  },
+  {
+   "id": "D083",
+   "title": "Network Topology for Collaboration Networks",
+   "year": 2022,
+   "authors": [
+    "Mateo Park",
+    "Lukas Kowalski"
+   ],
+   "cited_by_count": 13,
+   "references": [
+    "D001",
+    "D007",
+    "D017",
+    "D058",
+    "D075"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "Our clustering algorithm scales to networks with millions of edges. Centrality measures such as PageRank identify structurally important nodes. We detect communities in collaboration networks using modularity optimization and random walks."
+  },
+  {
+   "id": "D084",
+   "title": "Rethinking Transformer Representations for Multilingual Papers",
+   "year": 2022,
+   "authors": [
+    "Aigerim Lindqvist",
+    "Mei Carvalho",
+    "Mateo Novak"
+   ],
+   "cited_by_count": 26,
+   "references": [
+    "D001",
+    "D002",
+    "D005",
+    "D038",
+    "D045"
+   ],
+   "venue": "Journal of Informetrics (fictional)",
+   "abstract": "The embeddings capture topical similarity better than bag of words representations. We evaluate sentence representations on paper recommendation and topic classification. Pretrained neural encoders reduce the annotation effort for scientific text tasks."
+  },
+  {
+   "id": "D085",
+   "title": "Scalable Contrastive Learning of Research Topics",
+   "year": 2022,
+   "authors": [
+    "Kenji Bekova",
+    "Mei Lindqvist",
+    "Kenji Fischer"
+   ],
+   "cited_by_count": 22,
+   "references": [
+    "D001",
+    "D045",
+    "D058",
+    "D073"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "Pretrained neural encoders reduce the annotation effort for scientific text tasks. We train transformer language models to embed multilingual papers into a semantic vector space. The embeddings capture topical similarity better than bag of words representations."
+  },
+  {
+   "id": "D086",
+   "title": "Towards Graph Centrality in Temporal Networks",
+   "year": 2022,
+   "authors": [
+    "Chloé Nurlanov",
+    "Kenji Kowalski",
+    "Arman Kowalski",
+    "Mei Singh"
+   ],
+   "cited_by_count": 14,
+   "references": [
+    "D016",
+    "D017",
+    "D019",
+    "D057",
+    "D075"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "Centrality measures such as PageRank identify structurally important nodes. Link prediction methods anticipate future citations from the current graph structure. Our clustering algorithm scales to networks with millions of edges."
+  },
+  {
+   "id": "D087",
+   "title": "FAIR Data: Evidence from Digital Libraries",
+   "year": 2023,
+   "authors": [
+    "Daniyar Kowalski",
+    "Fatima Okafor",
+    "Chloé Bekova",
+    "Fatima Tanaka"
+   ],
+   "cited_by_count": 17,
+   "references": [
+    "D002",
+    "D004",
+    "D005",
+    "D007",
+    "D009",
+    "D029",
+    "D030"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "Open science practices such as data sharing and preregistration are becoming common. We propose guidelines for citing research software and archiving releases with a DOI. We examine the reproducibility of machine learning experiments and the availability of code and data."
+  },
+  {
+   "id": "D088",
+   "title": "Interactive Visualization for Literature Reviews",
+   "year": 2023,
+   "authors": [
+    "Mateo Haddad"
+   ],
+   "cited_by_count": 21,
+   "references": [
+    "D007",
+    "D009",
+    "D012",
+    "D014",
+    "D050"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "Force-directed graph layout algorithms are adapted to render thousands of nodes. The interface combines zoomable maps, filtering and linked detail views. We present an interactive visualization system for exploring science maps."
+  },
+  {
+   "id": "D089",
+   "title": "Rethinking FAIR Data for Bibliometric Studies",
+   "year": 2023,
+   "authors": [
+    "Arman Tanaka",
+    "Priya Silva",
+    "Ivan Duarte",
+    "Fatima Rossi"
+   ],
+   "cited_by_count": 11,
+   "references": [
+    "D004",
+    "D007",
+    "D031"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "We propose guidelines for citing research software and archiving releases with a DOI. We examine the reproducibility of digital libraries and the availability of code and data. Provenance tracking and versioned workflows make computational results verifiable."
+  },
+  {
+   "id": "D090",
+   "title": "Scalable Literature Maps of Knowledge Domains",
+   "year": 2023,
+   "authors": [
+    "Fatima Lindqvist",
+    "Arman Singh",
+    "Yuki Bekova",
+    "Arman Carvalho"
+   ],
+   "cited_by_count": 7,
+   "references": [
+    "D001",
+    "D012",
+    "D014"
+   ],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "We present an interactive visualization system for exploring science maps. A user study shows that visual exploration speeds up literature review tasks. Visual analytics helps researchers identify clusters and bridges between fields."
+  },
+  {
+   "id": "D091",
+   "title": "Data Provenance for Scientific Pipelines",
+   "year": 2024,
+   "authors": [
+    "Kenji Moreau",
+    "Zhanna Esenova",
+    "Omar Haddad",
+    "Elif Moreau"
+   ],
+   "cited_by_count": 7,
+   "references": [
+    "D005",
+    "D019",
+    "D063"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "Open science practices such as data sharing and preregistration are becoming common. Provenance tracking and versioned workflows make computational results verifiable. FAIR principles improve the findability and reuse of research data and software."
+  },
+  {
+   "id": "D092",
+   "title": "Random Walk Methods: Evidence from Heterogeneous Graphs",
+   "year": 2024,
+   "authors": [
+    "Amara Duarte"
+   ],
+   "cited_by_count": 14,
+   "references": [
+    "D002",
+    "D008",
+    "D016",
+    "D017",
+    "D019",
+    "D055",
+    "D058"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "Link prediction methods anticipate future citations from the current graph structure. Our clustering algorithm scales to networks with millions of edges. We detect communities in citation graphs using modularity optimization and random walks."
+  },
+  {
+   "id": "D093",
+   "title": "Rethinking Language Models for Citation Recommendation",
+   "year": 2024,
+   "authors": [
+    "Ivan Park"
+   ],
+   "cited_by_count": 16,
+   "references": [
+    "D001",
+    "D008",
+    "D012",
+    "D038",
+    "D079"
+   ],
+   "venue": "Open Research Practice (fictional)",
+   "abstract": "We train transformer language models to embed paper similarity into a semantic vector space. The embeddings capture topical similarity better than bag of words representations. Contrastive learning on citation pairs improves document embeddings for similarity search."
+  },
+  {
+   "id": "D094",
+   "title": "Scalable Co-citation Patterns of Scientific Journals",
+   "year": 2024,
+   "authors": [
+    "Amara Oyelaran"
+   ],
+   "cited_by_count": 6,
+   "references": [
+    "D001",
+    "D003",
+    "D010",
+    "D018",
+    "D053",
+    "D069"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "We analyse citation counts and bibliometric indicators across scientific journals. The study measures research impact with co-citation and h-index based indicators. Bibliometric evidence suggests that scholarly influence concentrates in few journals."
+  },
+  {
+   "id": "D095",
+   "title": "Towards Co-citation Patterns in Early Career Researchers",
+   "year": 2024,
+   "authors": [
+    "Kenji Esenova",
+    "Lukas Oyelaran",
+    "Amara Moreau",
+    "Mateo Fischer"
+   ],
+   "cited_by_count": 14,
+   "references": [
+    "D003",
+    "D004",
+    "D014",
+    "D055"
+   ],
+   "venue": "Scientometric Letters (fictional)",
+   "abstract": "We propose a normalised impact indicator that corrects for field size and publication age. Our results show that citation distributions are highly skewed and field dependent. The study measures research impact with co-citation and h-index based indicators."
+  },
+  {
+   "id": "D096",
+   "title": "Literature Maps for Science Maps",
+   "year": 2025,
+   "authors": [
+    "Zhanna Fischer",
+    "Aigerim Okafor"
+   ],
+   "cited_by_count": 10,
+   "references": [
+    "D001",
+    "D009",
+    "D014",
+    "D022",
+    "D029",
+    "D033"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "The interface combines zoomable maps, filtering and linked detail views. Force-directed graph layout algorithms are adapted to render thousands of nodes. Visual analytics helps researchers identify clusters and bridges between fields."
+  },
+  {
+   "id": "D097",
+   "title": "Rethinking Research Impact for Academic Fields",
+   "year": 2025,
+   "authors": [
+    "Zhanna Carvalho"
+   ],
+   "cited_by_count": 3,
+   "references": [
+    "D003",
+    "D010",
+    "D018"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "The study measures research impact with co-citation and h-index based indicators. Our results show that citation distributions are highly skewed and field dependent. We propose a normalised impact indicator that corrects for field size and publication age."
+  },
+  {
+   "id": "D098",
+   "title": "Scalable FAIR Data of Digital Libraries",
+   "year": 2025,
+   "authors": [
+    "Aigerim Bekova",
+    "Arman Bekova",
+    "Laura Kim",
+    "Mei Kowalski"
+   ],
+   "cited_by_count": 2,
+   "references": [
+    "D002",
+    "D004",
+    "D015"
+   ],
+   "venue": "Visual Computing Review (fictional)",
+   "abstract": "We propose guidelines for citing research software and archiving releases with a DOI. We examine the reproducibility of bibliometric studies and the availability of code and data. Provenance tracking and versioned workflows make computational results verifiable."
+  },
+  {
+   "id": "D099",
+   "title": "Scholarly Influence in Early Career Researchers",
+   "year": 2025,
+   "authors": [
+    "Lukas Kim",
+    "Arman Park",
+    "Kenji Lindqvist",
+    "Arman Singh"
+   ],
+   "cited_by_count": 3,
+   "references": [
+    "D003",
+    "D018",
+    "D031",
+    "D034",
+    "D069"
+   ],
+   "venue": "Computational Linguistics Demo",
+   "abstract": "The study measures research impact with co-citation and h-index based indicators. Bibliometric evidence suggests that scholarly influence concentrates in few journals. Our results show that citation distributions are highly skewed and field dependent."
+  },
+  {
+   "id": "D100",
+   "title": "Transformer Representations: Evidence from Scientific Abstracts",
+   "year": 2025,
+   "authors": [
+    "Laura Esenova",
+    "Ivan Haddad",
+    "Omar Rossi"
+   ],
+   "cited_by_count": 10,
+   "references": [
+    "D001",
+    "D004",
+    "D008",
+    "D011",
+    "D017",
+    "D079"
+   ],
+   "venue": "Network Science Demo Journal",
+   "abstract": "Contrastive learning on citation pairs improves document embeddings for similarity search. The embeddings capture topical similarity better than bag of words representations. We train transformer language models to embed research topics into a semantic vector space."
+  }
+ ]
+}
