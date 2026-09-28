@@ -1,0 +1,16 @@
+services:
+  citemap:
+    build: .
+    image: citemap-app:local
+    ports:
+      - "8000:8000"
+    environment:
+      # Optional: a free OpenAlex API key gives a larger daily request budget.
+      OPENALEX_API_KEY: ${OPENALEX_API_KEY:-}
+      OPENALEX_MAILTO: ${OPENALEX_MAILTO:-}
+    volumes:
+      - citemap-data:/data
+    restart: unless-stopped
+
+volumes:
+  citemap-data:
