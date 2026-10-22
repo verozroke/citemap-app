@@ -73,22 +73,11 @@ jobs:
     name: Docker image
     runs-on: ubuntu-latest
     needs: [backend, frontend]
+    env:
+      BUILD_NUMBER: gha-${{ github.run_number }}
     steps:
       - uses: actions/checkout@v7
       - name: Build image
-        run: docker build -t citemap-app:ci .
+        run: ci/build-image.sh
       - name: Smoke test
-        run: |
-          docker run -d --name citemap -p 8000:8000 citemap-app:ci
-          for i in $(seq 1 30); do
-            curl -fsS http://localhost:8000/api/health && break
-            sleep 1
-          done
-          curl -fsS -X POST http://localhost:8000/api/graphs \
-            -H 'Content-Type: application/json' -d '{"source":"demo","seed_id":"D042"}'
-          sleep 2
-          curl -fsS "http://localhost:8000/api/graphs/demo/D042?limit=5" | head -c 300
-          curl -fsS http://localhost:8000/ | grep -q "<div id=\"root\">"
-      - name: Logs
-        if: always()
-        run: docker logs citemap || true
+        run: ci/smoke-test.sh
