@@ -29,3 +29,6 @@ frontend/coverage/
 
 # CI reports
 reports/
+
+# Local Jenkins secrets (copy jenkins/.env.example)
+jenkins/.env
