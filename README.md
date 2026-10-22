@@ -140,7 +140,10 @@ frontend/
   src/                 React components, API client, graph helpers
   src/**/*.test.ts(x)  Vitest and Testing Library tests
 docs/screenshots/      images used in this README
-Dockerfile             multi-stage build: frontend, wheels, runtime
+Dockerfile             multi-stage build: test targets, frontend, wheels, runtime
+Jenkinsfile            Jenkins pipeline: tests, image, smoke test, push, staging
+ci/                    the pipeline steps as scripts (also run by GitHub Actions)
+jenkins/               local Jenkins controller configured as code
 .github/workflows/     CI: lint, type check, tests, build, Docker smoke test
 ```
 
@@ -153,6 +156,33 @@ cd frontend && npm run lint && npm run typecheck && npm test && npm run build
 
 The backend test suite replaces OpenAlex with an in-memory fake, so it runs
 offline; coverage must stay at or above 85 %.
+
+## CI/CD with Jenkins
+
+The [`Jenkinsfile`](Jenkinsfile) defines the delivery pipeline. Each stage calls a
+script in [`ci/`](ci/), and all work happens in Docker containers, so the only
+requirement on the Jenkins machine is a Docker engine.
+
+| Stage | Script | What it does |
+| --- | --- | --- |
+| Checkout | | Gets the commit and names the image `citemap-app:<build>-<commit>` |
+| Unit tests: Backend | `ci/test-backend.sh` | ruff, mypy and pytest in the `backend-test` image; JUnit and coverage reports |
+| Unit tests: Frontend | `ci/test-frontend.sh` | oxlint, tsc and Vitest in the `frontend-test` image; JUnit report |
+| Build image | `ci/build-image.sh` | Builds the `runtime` image with the commit as a label |
+| Smoke test | `ci/smoke-test.sh` | Starts the image and checks health, the UI, a demo graph and CSV export |
+| Push to Docker Hub | `ci/push-image.sh` | Optional, parameter `PUSH_IMAGE` |
+| Deploy to staging | `ci/deploy-staging.sh` | Replaces the `citemap-staging` container on port 8081; rolls back if the check fails |
+
+The job polls GitHub every two minutes, so every commit to `main` is built.
+[`jenkins/`](jenkins/) contains a ready Jenkins controller: `docker compose up -d --build`
+in that folder starts Jenkins at <http://localhost:8080> with the job already
+created (see [`jenkins/README.md`](jenkins/README.md)). Without Jenkins, the same
+pipeline runs with:
+
+```bash
+ci/run-local.sh            # tests, image, smoke test
+ci/run-local.sh --deploy   # and deploy to http://localhost:8081
+```
 
 ## About the demo dataset
 
