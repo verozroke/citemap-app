@@ -78,6 +78,6 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Build image
-        run: ci/build-image.sh
+        run: bash ci/build-image.sh
       - name: Smoke test
-        run: ci/smoke-test.sh
+        run: bash ci/smoke-test.sh

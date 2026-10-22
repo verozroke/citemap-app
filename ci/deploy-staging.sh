@@ -13,7 +13,7 @@ docker run -d --name "${STAGING_NAME}" \
   -v citemap-staging-data:/data \
   --label "ci.build-number=${BUILD_NUMBER}" \
   "${IMAGE_NAME}:${IMAGE_TAG}" >/dev/null
-if ! ci/wait-and-check.sh "${STAGING_NAME}"; then
+if ! bash ci/wait-and-check.sh "${STAGING_NAME}"; then
   echo "Deployment check failed" >&2
   if [[ -n "${previous}" ]]; then
     log "Rolling back to ${previous}"

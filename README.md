@@ -180,8 +180,8 @@ created (see [`jenkins/README.md`](jenkins/README.md)). Without Jenkins, the sam
 pipeline runs with:
 
 ```bash
-ci/run-local.sh            # tests, image, smoke test
-ci/run-local.sh --deploy   # and deploy to http://localhost:8081
+bash ci/run-local.sh            # tests, image, smoke test
+bash ci/run-local.sh --deploy   # and deploy to http://localhost:8081
 ```
 
 ## About the demo dataset

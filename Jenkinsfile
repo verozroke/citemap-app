@@ -53,7 +53,7 @@ pipeline {
             parallel {
                 stage('Backend') {
                     steps {
-                        sh 'ci/test-backend.sh'
+                        sh 'bash ci/test-backend.sh'
                     }
                     post {
                         always {
@@ -65,7 +65,7 @@ pipeline {
                 }
                 stage('Frontend') {
                     steps {
-                        sh 'ci/test-frontend.sh'
+                        sh 'bash ci/test-frontend.sh'
                     }
                     post {
                         always {
@@ -78,13 +78,13 @@ pipeline {
 
         stage('Build image') {
             steps {
-                sh 'ci/build-image.sh'
+                sh 'bash ci/build-image.sh'
             }
         }
 
         stage('Smoke test') {
             steps {
-                sh 'ci/smoke-test.sh'
+                sh 'bash ci/smoke-test.sh'
             }
         }
 
@@ -97,7 +97,7 @@ pipeline {
                                                   usernameVariable: 'DOCKERHUB_USERNAME',
                                                   passwordVariable: 'DOCKERHUB_TOKEN')]) {
                     withEnv(["DOCKERHUB_REPO=${params.DOCKERHUB_REPO}"]) {
-                        sh 'ci/push-image.sh'
+                        sh 'bash ci/push-image.sh'
                     }
                 }
             }
@@ -108,7 +108,7 @@ pipeline {
                 expression { params.DEPLOY_STAGING }
             }
             steps {
-                sh 'ci/deploy-staging.sh'
+                sh 'bash ci/deploy-staging.sh'
             }
         }
     }
@@ -119,7 +119,7 @@ pipeline {
         }
         always {
             archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
-            sh 'ci/cleanup.sh || true'
+            sh 'bash ci/cleanup.sh || true'
         }
     }
 }

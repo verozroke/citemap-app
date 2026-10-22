@@ -59,5 +59,5 @@ docker rm -f citemap-staging   # stop the staging deployment
 - A local Jenkins cannot receive GitHub webhooks, so the job polls GitHub. If
   Jenkins is reachable from the internet, add a webhook and replace `pollSCM`
   with `githubPush()` in the Jenkinsfile.
-- Every stage is a script in `ci/`. Without Jenkins, `ci/run-local.sh --deploy`
+- Every stage is a script in `ci/`. Without Jenkins, `bash ci/run-local.sh --deploy`
   runs the same steps on any machine with Docker and Bash.
