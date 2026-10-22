@@ -1,0 +1,15 @@
+# Pipeline engine, Git and GitHub integration
+workflow-aggregator
+git
+github
+# Configuration as code and the seed job
+configuration-as-code
+job-dsl
+# Pipeline visualisation and reports
+pipeline-graph-view
+pipeline-stage-view
+junit
+coverage
+# Build log helpers
+timestamper
+ansicolor

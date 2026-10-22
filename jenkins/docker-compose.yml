@@ -1,0 +1,28 @@
+# Local Jenkins for the CiteMap pipeline.
+#   cp .env.example .env      (then set a password)
+#   docker compose up -d --build
+#   open http://localhost:8080
+services:
+  jenkins:
+    build: .
+    image: citemap-jenkins:local
+    container_name: citemap-jenkins
+    # The pipeline drives the host's Docker engine through its socket. Running
+    # the controller as root gives it access to the socket on Docker Desktop;
+    # acceptable for a local lab, not for a shared server.
+    user: root
+    ports:
+      - "8080:8080"
+    environment:
+      JENKINS_ADMIN_ID: ${JENKINS_ADMIN_ID:-admin}
+      JENKINS_ADMIN_PASSWORD: ${JENKINS_ADMIN_PASSWORD:-admin}
+      DOCKERHUB_USERNAME: ${DOCKERHUB_USERNAME:-not-set}
+      DOCKERHUB_TOKEN: ${DOCKERHUB_TOKEN:-not-set}
+      CITEMAP_REPO_URL: ${CITEMAP_REPO_URL:-https://github.com/verozroke/citemap-app.git}
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+
+volumes:
+  jenkins_home:

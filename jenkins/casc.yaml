@@ -1,0 +1,53 @@
+# Jenkins Configuration as Code: admin user, credentials and the pipeline job.
+jenkins:
+  systemMessage: "CiteMap CI/CD server (Applied Software Development Project, Assignment 5)"
+  numExecutors: 2
+  mode: NORMAL
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: "${JENKINS_ADMIN_ID:-admin}"
+          password: "${JENKINS_ADMIN_PASSWORD:-admin}"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+
+security:
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: false
+
+unclassified:
+  location:
+    url: "http://localhost:8080/"
+
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+          - usernamePassword:
+              scope: GLOBAL
+              id: "dockerhub"
+              description: "Docker Hub username and access token (optional push stage)"
+              username: "${DOCKERHUB_USERNAME:-not-set}"
+              password: "${DOCKERHUB_TOKEN:-not-set}"
+
+jobs:
+  - script: |
+      pipelineJob('citemap-app') {
+        displayName('CiteMap CI/CD')
+        description('Unit tests, Docker image build, smoke test, optional push to Docker Hub and deployment to the staging container. Pipeline definition: Jenkinsfile in the repository.')
+        logRotator { numToKeep(20) }
+        definition {
+          cpsScm {
+            scm {
+              git {
+                remote { url('${CITEMAP_REPO_URL:-https://github.com/verozroke/citemap-app.git}') }
+                branch('*/main')
+              }
+            }
+            scriptPath('Jenkinsfile')
+            lightweight(true)
+          }
+        }
+      }
