@@ -26,3 +26,6 @@ frontend/coverage/
 .vscode/
 .DS_Store
 *.log
+
+# CI reports
+reports/
